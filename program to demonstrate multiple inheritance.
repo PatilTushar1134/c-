@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication10
+{
+   
+         class student 
+          {
+            public void info()
+            {
+               String  name = "Tushar";
+               String Class = "SYBCA";
+               Console.WriteLine("student name :-" +name);
+               Console.WriteLine("Class :-" + Class);
+             }
+         }
+         interface exam
+        {
+          void mak();
+        }
+         class result:student,exam
+       {
+        public void mak()
+        {
+         String subject = "c#.net";
+         int marks = 19;
+         Console.WriteLine("subject:-" + subject);
+         Console.WriteLine("marks :-" + marks);
+        }
+        static void Main(string[] args)
+       {
+        result obj = new result();
+        obj.info();
+        obj.mak();
+        Console.ReadLine();
+       }
+    }
+}
