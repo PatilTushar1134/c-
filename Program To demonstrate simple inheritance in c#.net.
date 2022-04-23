@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication9
+{
+    public class Program 
+    {
+      public	int rollno=107;
+      public string	name="Tushar";
+    }
+    class exam:Program
+    {
+       public static void Main()
+       
+      {
+	    exam n=new exam();
+        Console.WriteLine(n.rollno);
+        Console.WriteLine( n.name);
+	    Console.ReadLine();
+
+      }     
+    }
+}
